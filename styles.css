@@ -1,0 +1,55 @@
+#container {
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding: 10px;
+}
+
+#display {
+  height: 40px;
+  width: calc(100% - 20px); /* Adjusted width to accommodate padding */
+  border: 1px solid black;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px; /* Add some padding for the display content */
+}
+#buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 100%; /* Ensure buttons container takes up full width */
+  max-width: 380px; /* Set maximum width to leave space for margins */
+}
+
+.number,
+.operator,
+#equals {
+  box-sizing: border-box;
+  height: 80px;
+  width: calc((100% - 15px) / 4 - 5px);
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+#equals {
+  width: calc((100% - 20px));
+}
+.operator,
+#equals {
+  background-color: #e0e0e0;
+}
+
+.selected {
+  background-color: rgb(139, 101, 101);
+  color: white;
+}
